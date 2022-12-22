@@ -6,6 +6,8 @@ The month cell in the Flutter Event Calendar can be customised using the [monthC
 
 You can use the required widget for the month cell customization. In this sample we are using Icon widget for customization.
 
+![MonthCellCustom](https://user-images.githubusercontent.com/46158936/209100064-9d458a1b-3706-4a37-80fc-f368b9c613e3.png)
+
 For more details , you can refer to our UG documentation [MonthCellCustomization](https://help.syncfusion.com/flutter/calendar/builders#month-cell-builder)
 
 ## Requirements to run the demo
