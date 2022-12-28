@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(MonthCellBuilder());
+void main() => runApp(const MonthCellBuilder());
 
 class MonthCellBuilder extends StatelessWidget {
+  const MonthCellBuilder({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: SafeArea(
-          child: SfCalendar(
-            view: CalendarView.month,
-            monthCellBuilder: monthCellBuilder,
-          ),
-        )));
+              child: SfCalendar(
+                view: CalendarView.month,
+                monthCellBuilder: monthCellBuilder,
+              ),
+            )));
   }
 
   Widget monthCellBuilder(BuildContext context, MonthCellDetails details) {
@@ -26,7 +27,7 @@ class MonthCellBuilder extends StatelessWidget {
         ),
         Container(
           child: IconButton(
-            icon: Icon(Icons.date_range),
+            icon: const Icon(Icons.date_range), onPressed: () {  },
           ),
         )
       ],
